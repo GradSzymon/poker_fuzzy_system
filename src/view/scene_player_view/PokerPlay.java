@@ -3,6 +3,8 @@ import net.sourceforge.jFuzzyLogic.FunctionBlock;
 import net.sourceforge.jFuzzyLogic.plot.JFuzzyChart;
 import net.sourceforge.jFuzzyLogic.rule.Variable;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class PokerPlay {
@@ -12,6 +14,9 @@ public class PokerPlay {
         String fileName = "fcl/poker_play.fcl";
         FIS fis = FIS.load(fileName,true);
         Scanner read = new Scanner(System.in);
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("dog", "1.0");
+        System.out.println(map.get("dog"));
         if (fis == null){
             System.err.println("Can't load the file: " + fileName + ".");
             return;
