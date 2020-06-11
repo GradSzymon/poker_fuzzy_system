@@ -12,7 +12,7 @@ public class PokerPlay {
     
     public static void main(String[] args){
 
-        String[] Hands = {"AA","AKs","AQs","AJs","ATs","A9s","A8s","A7s","A6s","A5s","A4s","A3s","A2s",
+        String[] hands = {"AA","AKs","AQs","AJs","ATs","A9s","A8s","A7s","A6s","A5s","A4s","A3s","A2s",
 
             "AKo","KK","KQs","KJs","KTs","K9s","K8s","K7s","K6s","K5s","K4s","K3s","K2s",
             
@@ -40,8 +40,8 @@ public class PokerPlay {
 
 
         Map<String, Float> mapHands = new HashMap<String, Float>();
-        for(float i=0;i<Hands.length;i++){
-            mapHands.put(Hands[(int)i].toLowerCase(), i+1);
+        for(float i=0;i<hands.length;i++){
+            mapHands.put(hands[(int)i].toLowerCase(), i+1);
         }
 
         System.out.println(mapHands.get("t2o"));
